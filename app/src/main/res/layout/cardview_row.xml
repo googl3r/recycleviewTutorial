@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        card_view:cardCornerRadius="5dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <ImageView
+                android:id="@+id/image"
+                android:src="@drawable/ic_launcher"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+        <TextView
+                android:background="@android:color/transparent"
+                android:id="@+id/firstText"
+                android:textColor="@color/text_primary"
+                android:textScaleX="2"
+                android:textStyle="bold|italic"
+                android:text="Text uppon the Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp"/>
+        <TextView
+                android:id="@+id/secondText"
+                android:text="another text bottom of the image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:layout_below="@+id/image"
+                android:layout_alignParentLeft="true"/>
+
+        <Button android:layout_width="wrap_content"
+                android:paddingLeft="3dp"
+                android:textColor="@color/holo_black_dark"
+                android:layout_height="wrap_content"
+                android:text="Partager"
+                android:background="@android:color/transparent"
+                android:id="@+id/partager" android:layout_below="@+id/secondText"
+                android:layout_alignParentLeft="true" android:layout_marginTop="3dp"/>
+
+        <Button android:layout_width="wrap_content"
+                android:paddingLeft="3dp"
+                android:textColor="@color/primary"
+                android:layout_height="wrap_content"
+                android:id="@+id/details"
+                android:text="Details"
+                android:background="@android:color/transparent"
+                android:layout_alignTop="@+id/partager"
+                android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
